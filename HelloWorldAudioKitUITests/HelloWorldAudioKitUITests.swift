@@ -8,6 +8,7 @@
 
 import XCTest
 
+
 class HelloWorldAudioKitUITests: XCTestCase {
         
     override func setUp() {
@@ -28,9 +29,27 @@ class HelloWorldAudioKitUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testHomeView() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let app = XCUIApplication()
+        app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).elementBoundByIndex(1).swipeLeft()
+        app.images["iPhone 6 Plus"].tap()
+        snapshot("1Screen")
+        sleep(4)
+        
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["A Maj"].pressForDuration(0.7);
+        snapshot("2Screen")
+        
+        
+        
+        
+        
+
+        
     }
     
 }

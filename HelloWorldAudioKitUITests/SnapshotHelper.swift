@@ -28,9 +28,9 @@ func snapshot(name: String, waitForLoadingIndicator: Bool = true) {
 class Snapshot: NSObject {
 
     class func setupSnapshot(app: XCUIApplication) {
-        setLanguage(app)
-        setLocale(app)
-        setLaunchArguments(app)
+        let app = XCUIApplication()
+        setupSnapshot(app)
+        app.launch()
     }
 
     class func setLanguage(app: XCUIApplication) {

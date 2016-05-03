@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SynthViewController.swift
 //  HelloWorldAudioKit
 //
 //  Created by Michael Mecham on 4/21/16.
@@ -10,7 +10,7 @@ import UIKit
 import AudioKit
 import CoreMotion
 
-class ViewController: UIViewController {
+class SynthViewController: UIViewController {
     
     let manager = CMMotionManager()
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefersStatusBarHidden()
-        let mixer = AKMixer(SynthController.sharedController.reverb)
+        let mixer = AKMixer(SynthController.sharedController.tb303Filter)
         AudioKit.output = mixer
         AudioKit.start()
         setupDeviceMotion()

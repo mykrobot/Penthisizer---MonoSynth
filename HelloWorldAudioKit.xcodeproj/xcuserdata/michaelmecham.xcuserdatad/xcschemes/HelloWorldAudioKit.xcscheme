@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B47052E21CD19372006D0B2B"
+               BuildableName = "HelloWorldAudioKitUITests.xctest"
+               BlueprintName = "HelloWorldAudioKitUITests"
+               ReferencedContainer = "container:HelloWorldAudioKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

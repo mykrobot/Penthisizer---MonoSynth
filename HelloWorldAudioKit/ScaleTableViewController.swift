@@ -15,8 +15,11 @@ class ScaleTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundPattern.png"]]
-        tableView.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "ScaleBack7")!)
+        
+        if let backImage = UIImage(named: "ScaleBack7") {
+           tableView.backgroundColor = UIColor(patternImage: backImage)
+        }
+        
         
     }
 

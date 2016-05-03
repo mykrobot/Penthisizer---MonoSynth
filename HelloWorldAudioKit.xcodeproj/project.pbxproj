@@ -8,19 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B40345AF1CC96C6700F8F245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40345AE1CC96C6700F8F245 /* AppDelegate.swift */; };
-		B40345B11CC96C6700F8F245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40345B01CC96C6700F8F245 /* ViewController.swift */; };
+		B40345B11CC96C6700F8F245 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40345B01CC96C6700F8F245 /* SynthViewController.swift */; };
 		B40345B41CC96C6700F8F245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40345B21CC96C6700F8F245 /* Main.storyboard */; };
 		B40345B61CC96C6700F8F245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40345B51CC96C6700F8F245 /* Assets.xcassets */; };
 		B40345B91CC96C6700F8F245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40345B71CC96C6700F8F245 /* LaunchScreen.storyboard */; };
-		B40345C21CC96CCB00F8F245 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40345C11CC96CCB00F8F245 /* AudioKit.framework */; };
-		B40345C31CC96CCB00F8F245 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B40345C11CC96CCB00F8F245 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B40346931CC9D75900F8F245 /* Ambient.wav in Resources */ = {isa = PBXBuildFile; fileRef = B40346921CC9D75900F8F245 /* Ambient.wav */; };
 		B40346951CCAC52100F8F245 /* 85_D_68Swing_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = B40346941CCAC52100F8F245 /* 85_D_68Swing_01.wav */; };
 		B40346971CCACE8F00F8F245 /* HWDrum1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B40346961CCACE8F00F8F245 /* HWDrum1.wav */; };
 		B40346B71CCEE5A200F8F245 /* ScaleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40346B61CCEE5A200F8F245 /* ScaleController.swift */; };
 		B47052C41CCFDB39006D0B2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47052C31CCFDB39006D0B2B /* SWRevealViewController.m */; };
 		B47052C81CD025B1006D0B2B /* ScaleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47052C71CD025B1006D0B2B /* ScaleTableViewController.swift */; };
+		B47052CE1CD11721006D0B2B /* SynthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47052CD1CD11721006D0B2B /* SynthController.swift */; };
+		B47052E61CD19372006D0B2B /* HelloWorldAudioKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47052E51CD19372006D0B2B /* HelloWorldAudioKitUITests.swift */; };
+		B49ACB1D1CD1A895004A635A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49ACB1C1CD1A895004A635A /* SnapshotHelper.swift */; };
+		B4CF2A651CD264F1007DA1CF /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40345C11CC96CCB00F8F245 /* AudioKit.framework */; };
+		B4CF2A661CD264F1007DA1CF /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B40345C11CC96CCB00F8F245 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B47052E81CD19372006D0B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B40345A31CC96C6700F8F245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B40345AA1CC96C6700F8F245;
+			remoteInfo = HelloWorldAudioKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B40345C41CC96CCB00F8F245 /* Embed Frameworks */ = {
@@ -29,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B40345C31CC96CCB00F8F245 /* AudioKit.framework in Embed Frameworks */,
+				B4CF2A661CD264F1007DA1CF /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +52,7 @@
 /* Begin PBXFileReference section */
 		B40345AB1CC96C6700F8F245 /* HelloWorldAudioKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldAudioKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40345AE1CC96C6700F8F245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B40345B01CC96C6700F8F245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B40345B01CC96C6700F8F245 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
 		B40345B31CC96C6700F8F245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B40345B51CC96C6700F8F245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40345B81CC96C6700F8F245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +66,11 @@
 		B47052C21CCFDB39006D0B2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B47052C31CCFDB39006D0B2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B47052C71CD025B1006D0B2B /* ScaleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleTableViewController.swift; sourceTree = "<group>"; };
+		B47052CD1CD11721006D0B2B /* SynthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthController.swift; sourceTree = "<group>"; };
+		B47052E31CD19372006D0B2B /* HelloWorldAudioKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldAudioKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47052E51CD19372006D0B2B /* HelloWorldAudioKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldAudioKitUITests.swift; sourceTree = "<group>"; };
+		B47052E71CD19372006D0B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49ACB1C1CD1A895004A635A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +78,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40345C21CC96CCB00F8F245 /* AudioKit.framework in Frameworks */,
+				B4CF2A651CD264F1007DA1CF /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47052E01CD19372006D0B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +97,7 @@
 			children = (
 				B40345C11CC96CCB00F8F245 /* AudioKit.framework */,
 				B40345AD1CC96C6700F8F245 /* HelloWorldAudioKit */,
+				B47052E41CD19372006D0B2B /* HelloWorldAudioKitUITests */,
 				B40345AC1CC96C6700F8F245 /* Products */,
 				B40346921CC9D75900F8F245 /* Ambient.wav */,
 				B40346941CCAC52100F8F245 /* 85_D_68Swing_01.wav */,
@@ -83,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B40345AB1CC96C6700F8F245 /* HelloWorldAudioKit.app */,
+				B47052E31CD19372006D0B2B /* HelloWorldAudioKitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,18 +118,29 @@
 			isa = PBXGroup;
 			children = (
 				B40345AE1CC96C6700F8F245 /* AppDelegate.swift */,
+				B47052CD1CD11721006D0B2B /* SynthController.swift */,
 				B40346B61CCEE5A200F8F245 /* ScaleController.swift */,
-				B40345B01CC96C6700F8F245 /* ViewController.swift */,
+				B40345B01CC96C6700F8F245 /* SynthViewController.swift */,
 				B47052C71CD025B1006D0B2B /* ScaleTableViewController.swift */,
 				B47052C21CCFDB39006D0B2B /* SWRevealViewController.h */,
 				B47052C31CCFDB39006D0B2B /* SWRevealViewController.m */,
+				B47052C11CCFDB38006D0B2B /* HelloWorldAudioKit-Bridging-Header.h */,
 				B40345B21CC96C6700F8F245 /* Main.storyboard */,
 				B40345B51CC96C6700F8F245 /* Assets.xcassets */,
 				B40345B71CC96C6700F8F245 /* LaunchScreen.storyboard */,
 				B40345BA1CC96C6700F8F245 /* Info.plist */,
-				B47052C11CCFDB38006D0B2B /* HelloWorldAudioKit-Bridging-Header.h */,
 			);
 			path = HelloWorldAudioKit;
+			sourceTree = "<group>";
+		};
+		B47052E41CD19372006D0B2B /* HelloWorldAudioKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B47052E51CD19372006D0B2B /* HelloWorldAudioKitUITests.swift */,
+				B49ACB1C1CD1A895004A635A /* SnapshotHelper.swift */,
+				B47052E71CD19372006D0B2B /* Info.plist */,
+			);
+			path = HelloWorldAudioKitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +164,24 @@
 			productReference = B40345AB1CC96C6700F8F245 /* HelloWorldAudioKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B47052E21CD19372006D0B2B /* HelloWorldAudioKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B47052EA1CD19372006D0B2B /* Build configuration list for PBXNativeTarget "HelloWorldAudioKitUITests" */;
+			buildPhases = (
+				B47052DF1CD19372006D0B2B /* Sources */,
+				B47052E01CD19372006D0B2B /* Frameworks */,
+				B47052E11CD19372006D0B2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B47052E91CD19372006D0B2B /* PBXTargetDependency */,
+			);
+			name = HelloWorldAudioKitUITests;
+			productName = HelloWorldAudioKitUITests;
+			productReference = B47052E31CD19372006D0B2B /* HelloWorldAudioKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,6 +194,10 @@
 				TargetAttributes = {
 					B40345AA1CC96C6700F8F245 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					B47052E21CD19372006D0B2B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B40345AA1CC96C6700F8F245;
 					};
 				};
 			};
@@ -155,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				B40345AA1CC96C6700F8F245 /* HelloWorldAudioKit */,
+				B47052E21CD19372006D0B2B /* HelloWorldAudioKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +234,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47052E11CD19372006D0B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,14 +249,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40346B71CCEE5A200F8F245 /* ScaleController.swift in Sources */,
-				B40345B11CC96C6700F8F245 /* ViewController.swift in Sources */,
+				B40345B11CC96C6700F8F245 /* SynthViewController.swift in Sources */,
 				B47052C81CD025B1006D0B2B /* ScaleTableViewController.swift in Sources */,
 				B40345AF1CC96C6700F8F245 /* AppDelegate.swift in Sources */,
+				B47052CE1CD11721006D0B2B /* SynthController.swift in Sources */,
 				B47052C41CCFDB39006D0B2B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47052DF1CD19372006D0B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47052E61CD19372006D0B2B /* HelloWorldAudioKitUITests.swift in Sources */,
+				B49ACB1D1CD1A895004A635A /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B47052E91CD19372006D0B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B40345AA1CC96C6700F8F245 /* HelloWorldAudioKit */;
+			targetProxy = B47052E81CD19372006D0B2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B40345B21CC96C6700F8F245 /* Main.storyboard */ = {
@@ -330,6 +416,28 @@
 			};
 			name = Release;
 		};
+		B47052EB1CD19372006D0B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloWorldAudioKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMecham.HelloWorldAudioKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloWorldAudioKit;
+			};
+			name = Debug;
+		};
+		B47052EC1CD19372006D0B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloWorldAudioKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMecham.HelloWorldAudioKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloWorldAudioKit;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +455,15 @@
 			buildConfigurations = (
 				B40345BE1CC96C6700F8F245 /* Debug */,
 				B40345BF1CC96C6700F8F245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B47052EA1CD19372006D0B2B /* Build configuration list for PBXNativeTarget "HelloWorldAudioKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47052EB1CD19372006D0B2B /* Debug */,
+				B47052EC1CD19372006D0B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
