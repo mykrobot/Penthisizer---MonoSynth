@@ -84,25 +84,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 6 Plus" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-rh-kDr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia2-Zk-96a" customClass="AKOutputWaveformPlot" customModule="AudioKit">
-                                <rect key="frame" x="0.0" y="236" width="600" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="ci9-bo-EFT"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ia2-Zk-96a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4r7-N3-PXs"/>
                             <constraint firstItem="XE6-rh-kDr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BkR-3h-tfm"/>
-                            <constraint firstAttribute="trailing" secondItem="Ia2-Zk-96a" secondAttribute="trailing" id="C40-d0-QhY"/>
-                            <constraint firstItem="Ia2-Zk-96a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FwC-e8-Hkv"/>
-                            <constraint firstItem="Ia2-Zk-96a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmY-Uw-imJ"/>
                             <constraint firstAttribute="trailing" secondItem="XE6-rh-kDr" secondAttribute="trailing" id="ZyL-U7-Rnf"/>
                             <constraint firstItem="XE6-rh-kDr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hiG-E8-ZIg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XE6-rh-kDr" secondAttribute="bottom" id="jam-pc-yRC"/>
-                            <constraint firstAttribute="trailing" secondItem="Ia2-Zk-96a" secondAttribute="trailing" id="lGM-2T-et1"/>
-                            <constraint firstItem="Ia2-Zk-96a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q9V-r3-3OJ"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
