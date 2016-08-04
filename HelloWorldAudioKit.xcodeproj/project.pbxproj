@@ -13,6 +13,8 @@
 		B40345B61CC96C6700F8F245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40345B51CC96C6700F8F245 /* Assets.xcassets */; };
 		B40345B91CC96C6700F8F245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40345B71CC96C6700F8F245 /* LaunchScreen.storyboard */; };
 		B40346B71CCEE5A200F8F245 /* ScaleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40346B61CCEE5A200F8F245 /* ScaleController.swift */; };
+		B40FAFAE1D5406F1005A2E36 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FAFAD1D5406F1005A2E36 /* Session.swift */; };
+		B40FAFB01D5406FB005A2E36 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FAFAF1D5406FB005A2E36 /* NetworkController.swift */; };
 		B47052C41CCFDB39006D0B2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47052C31CCFDB39006D0B2B /* SWRevealViewController.m */; };
 		B47052C81CD025B1006D0B2B /* ScaleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47052C71CD025B1006D0B2B /* ScaleTableViewController.swift */; };
 		B47052CE1CD11721006D0B2B /* SynthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47052CD1CD11721006D0B2B /* SynthController.swift */; };
@@ -43,6 +45,8 @@
 		B40345B81CC96C6700F8F245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40345BA1CC96C6700F8F245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40346B61CCEE5A200F8F245 /* ScaleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleController.swift; sourceTree = "<group>"; };
+		B40FAFAD1D5406F1005A2E36 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B40FAFAF1D5406FB005A2E36 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		B47052C11CCFDB38006D0B2B /* HelloWorldAudioKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldAudioKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		B47052C21CCFDB39006D0B2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B47052C31CCFDB39006D0B2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B40345AE1CC96C6700F8F245 /* AppDelegate.swift */,
+				B40FAFB11D540733005A2E36 /* Analytics */,
 				B47052CD1CD11721006D0B2B /* SynthController.swift */,
 				B40346B61CCEE5A200F8F245 /* ScaleController.swift */,
 				B40345B01CC96C6700F8F245 /* SynthViewController.swift */,
@@ -107,6 +112,15 @@
 			path = HelloWorldAudioKit;
 			sourceTree = "<group>";
 		};
+		B40FAFB11D540733005A2E36 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B40FAFAD1D5406F1005A2E36 /* Session.swift */,
+				B40FAFAF1D5406FB005A2E36 /* NetworkController.swift */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +132,7 @@
 				B40345A81CC96C6700F8F245 /* Frameworks */,
 				B40345A91CC96C6700F8F245 /* Resources */,
 				B4FE59351D24B93F0065ABF5 /* Embed Frameworks */,
+				B40FFE791D3455720088C9A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -175,11 +190,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B40FFE791D3455720088C9A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B40345A71CC96C6700F8F245 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40FAFB01D5406FB005A2E36 /* NetworkController.swift in Sources */,
+				B40FAFAE1D5406F1005A2E36 /* Session.swift in Sources */,
 				B40346B71CCEE5A200F8F245 /* ScaleController.swift in Sources */,
 				B40345B11CC96C6700F8F245 /* SynthViewController.swift in Sources */,
 				B47052C81CD025B1006D0B2B /* ScaleTableViewController.swift in Sources */,
@@ -252,6 +285,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "aa8ef84e-f3b2-4b41-896c-f93a74884ddc";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,6 +326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "aa8ef84e-f3b2-4b41-896c-f93a74884ddc";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -313,6 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMecham.HelloWorldAudioKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa8ef84e-f3b2-4b41-896c-f93a74884ddc";
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldAudioKit/HelloWorldAudioKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -333,6 +369,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMecham.HelloWorldAudioKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa8ef84e-f3b2-4b41-896c-f93a74884ddc";
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldAudioKit/HelloWorldAudioKit-Bridging-Header.h";
 			};
 			name = Release;
